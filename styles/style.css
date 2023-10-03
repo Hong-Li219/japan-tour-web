@@ -1,0 +1,245 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+}
+body img.button-img {
+  position: fixed;
+  z-index: -5;
+  width: 100%;
+  min-height: 100vh;
+  bottom: 0;
+  left: 0;
+}
+body header {
+  background-color: #e8aaa3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0px 8px 4px #af9696;
+}
+body header section.logo {
+  display: flex;
+  flex: 5 1 500px;
+  align-items: center;
+}
+body header section.logo img {
+  width: 8vw;
+  height: 8vh;
+  margin: 0.5rem 0;
+}
+body header section.logo h1 {
+  font-size: 3rem;
+  color: white;
+}
+body header nav {
+  flex: 3 1 700px;
+}
+body header nav ul {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+body header nav ul li {
+  list-style-type: none;
+  padding: 0 2rem;
+}
+body header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+body header nav ul li a:hover {
+  color: #f9f2bc;
+}
+body main section.change-photo {
+  background-image: url(../images/日本櫻花.jpg);
+  min-height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main section.change-photo div.filter {
+  background-color: rgba(0, 0, 0, 0.418);
+  width: 100%;
+  min-height: 60vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+body main section.change-photo h3 {
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+body main section.four-circles {
+  background-color: white;
+  padding: 2rem 1.5rem;
+}
+body main section.four-circles h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #7d7c5d;
+}
+body main section.four-circles div.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.four-circles div.circles figure.circle {
+  flex: 0 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+body main section.four-circles div.circles figure.circle img {
+  width: 80%;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: all 0.05s ease-in;
+}
+body main section.four-circles div.circles figure.circle img:hover {
+  border: 3px solid #f3deb9;
+}
+body main section.four-circles div.circles figure.circle figcaption {
+  color: #7d7c5d;
+  padding-top: 0.5rem;
+}
+body main section.back-img {
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.back-img h3 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+body main section.map {
+  background-color: white;
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+body main section.map h3 {
+  font-size: 2rem;
+  color: #7d7c5d;
+}
+body main section.map p {
+  font-size: 1.2rem;
+  padding: 1.5rem 0;
+  line-height: 2.5rem;
+  color: rgb(86, 86, 86);
+}
+body main section.map iframe {
+  width: 100%;
+  height: 40vh;
+}
+body footer {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.7rem;
+}
+body footer div.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body footer div.logo img {
+  width: 15vw;
+  padding-bottom: 1rem;
+}
+body footer div.icons {
+  padding: 1rem;
+}
+body footer div.icons a {
+  padding: 0 0.8rem;
+}
+body footer div.icons a img {
+  width: 5vh;
+}
+
+@media screen and (max-width: 1200px) {
+  body header section.logo {
+    justify-content: center;
+  }
+  body header section.logo img {
+    width: 10vh;
+  }
+  body nav ul {
+    background-color: #7d7c5d;
+  }
+}
+@media screen and (max-width: 690px) {
+  body header section.logo {
+    flex-direction: column;
+  }
+  body header section.logo img {
+    width: 50vw;
+    height: 15vh;
+  }
+  body header section.logo h1 {
+    font-size: 2.5rem;
+  }
+  body header nav ul {
+    flex-direction: column;
+    background-color: #7d7c5d;
+    text-align: center;
+  }
+  body header nav ul li {
+    padding: 0.5rem 1rem;
+  }
+  body header nav ul li:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  body header nav ul li:hover a {
+    color: #af9696;
+  }
+  main section.change-photo h3 {
+    font-size: 2rem;
+  }
+  main section.back-img h3 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  footer {
+    font-size: 1.2rem;
+  }
+  footer div.logo img {
+    width: 20vw;
+  }
+  footer div.icons a img {
+    width: 5vw;
+  }
+}/*# sourceMappingURL=style.css.map */
